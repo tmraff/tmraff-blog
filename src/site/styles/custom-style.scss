@@ -588,23 +588,17 @@ body.markdown-rendered .content td {
   border-color: var(--background-modifier-border);
 }
 
-/* Clipped InfoDeck code frame. */
+/* Code blocks: deliberately flat; the clipped border does not survive the
+ * garden's generated markup consistently. */
 body.markdown-rendered .content pre {
   position: relative;
   box-sizing: border-box;
   padding: 1rem var(--spacing-xl);
-  border: 2px solid var(--color-tertiary);
+  border: 0;
   border-radius: 0;
   background: var(--code-background);
   box-shadow: none;
-  clip-path: polygon(
-    0 0,
-    calc(100% - 20px) 0,
-    100% 20px,
-    100% 100%,
-    20px 100%,
-    0 calc(100% - 20px)
-  );
+  clip-path: none;
 }
 
 body.markdown-rendered .content pre::after {
@@ -624,24 +618,17 @@ body.markdown-rendered .content :not(pre) > code {
   color: var(--text-normal);
 }
 
-/* Clipped InfoDeck blockquote frame. */
+/* Blockquotes: typography and surface only, with no decorative border. */
 body.markdown-rendered .content blockquote {
   box-sizing: border-box;
   margin: 1.5em 0;
   padding: var(--spacing-md) var(--spacing-lg);
-  border: 2px solid var(--blockquote-border-color);
+  border: 0;
   border-radius: 0;
   background: var(--blockquote-background-color);
   color: var(--text-normal);
   font-family: "Oxanium", var(--font-text-theme);
-  clip-path: polygon(
-    0 0,
-    calc(100% - 20px) 0,
-    100% 20px,
-    100% 100%,
-    20px 100%,
-    0 calc(100% - 20px)
-  );
+  clip-path: none;
 }
 
 /* Exact InfoDeck callout geometry and palette. */
@@ -769,10 +756,145 @@ body.markdown-rendered .content .callout[data-callout="nav"] .callout-content > 
   margin: 0;
 }
 
-/* Digital Garden turns picture sources into webp/jpeg, so filter the img node. */
-body.markdown-rendered .content picture[src$=".png" i] img,
-body.markdown-rendered .content img[src$=".png" i],
+/* Image filters remain opt-in. Never filter every source PNG globally. */
+body.markdown-rendered .content .png-legible img,
+body.markdown-rendered .content picture.png-legible img,
+body.markdown-rendered .content img.png-legible,
 body.png-legible.markdown-rendered .content picture img {
   filter: var(--png-filter-legible);
 }
 
+/* Native list markers should remain part of the body text, not the palette. */
+body.markdown-rendered .content ul:not(.task-list) > li::marker,
+body.markdown-rendered .content ol > li::marker {
+  color: inherit !important;
+}
+
+/* ========================================================================== */
+/* Three-column garden shell                                                  */
+/* Left rail: identity/search. Centre: note. Right rail: outline/backlinks.   */
+/* ========================================================================== */
+
+:root,
+.theme-dark {
+  --infodeck-left-rail-width: 260px;
+  --infodeck-shell-gap: 48px;
+  --infodeck-content-left: max(
+    calc(var(--infodeck-left-rail-width) + var(--infodeck-shell-gap)),
+    calc((100vw - var(--dg-content-max-width)) / 2 - 80px)
+  );
+  --dg-sidebar-top: 0;
+  --dg-sidebar-container-height: 100vh;
+  --dg-sidebar-container-padding: 28px;
+}
+
+@media (min-width: 1001px) {
+  body.no-filetree.has-navbar .navbar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 20;
+    box-sizing: border-box;
+    width: var(--infodeck-left-rail-width);
+    height: 100vh;
+    padding: 36px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    background: var(--background-secondary);
+    border: 0;
+    border-right: 1px solid var(--background-modifier-border);
+    box-shadow: none;
+  }
+
+  body.no-filetree.has-navbar .navbar-inner,
+  body.no-filetree.has-navbar .navbar-inner > a {
+    display: block;
+    width: 100%;
+  }
+
+  body.no-filetree.has-navbar .navbar h1 {
+    margin: 0 !important;
+    color: var(--color-primary) !important;
+    font-family: var(--font-header) !important;
+    font-size: 1.55rem !important;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+  }
+
+  body.no-filetree.has-navbar .navbar h1::after {
+    content: "_";
+    margin-left: var(--spacing-xs);
+  }
+
+  body.no-filetree.has-navbar .navbar .search-button {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  body.no-filetree.has-navbar .content {
+    margin-top: 0;
+    margin-left: var(--infodeck-content-left);
+    margin-right: auto;
+    padding-top: var(--dg-content-padding-top);
+  }
+
+  body.no-filetree.has-navbar > aside .sidebar {
+    position: fixed !important;
+    inset: 0 0 0 calc(
+      var(--infodeck-content-left) +
+      var(--dg-content-max-width) +
+      var(--infodeck-shell-gap)
+    ) !important;
+    box-sizing: border-box;
+    width: auto;
+    min-width: var(--dg-sidebar-min-width);
+    max-width: none;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: var(--background-secondary);
+    border: 0;
+    border-left: 1px solid var(--background-modifier-border);
+  }
+
+  body.no-filetree.has-navbar > aside .sidebar-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: var(--dg-sidebar-container-padding);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: transparent;
+  }
+
+  body.no-filetree.has-navbar > aside .toc,
+  body.no-filetree.has-navbar > aside .toc-container,
+  body.no-filetree.has-navbar > aside .backlinks {
+    width: 100%;
+    max-width: none;
+  }
+
+  body.no-filetree.has-navbar > aside .toc-container {
+    max-height: none;
+  }
+}
+
+/* Keep the centre column usable before the standard mobile layout takes over. */
+@media (min-width: 1001px) and (max-width: 1500px) {
+  :root,
+  .theme-dark {
+    --infodeck-left-rail-width: 220px;
+    --infodeck-shell-gap: 28px;
+    --dg-content-max-width: 680px;
+  }
+}
