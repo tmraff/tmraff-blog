@@ -771,17 +771,20 @@ body.markdown-rendered .content ol > li::marker {
 }
 
 /* ========================================================================== */
-/* Three-column garden shell                                                  */
-/* Left rail: identity/search. Centre: note. Right rail: outline/backlinks.   */
+/* Single-column garden shell                                                 */
+/* Left rail: identity, search, outline and backlinks. Main: centred note.    */
 /* ========================================================================== */
 
 :root,
 .theme-dark {
-  --infodeck-left-rail-width: 260px;
-  --infodeck-shell-gap: 48px;
+  --infodeck-left-rail-width: 280px;
+  --infodeck-shell-gap: 32px;
   --infodeck-content-left: max(
     calc(var(--infodeck-left-rail-width) + var(--infodeck-shell-gap)),
-    calc((100vw - var(--dg-content-max-width)) / 2 - 80px)
+    calc(
+      var(--infodeck-left-rail-width) +
+      (100vw - var(--infodeck-left-rail-width) - var(--dg-content-max-width)) / 2
+    )
   );
   --dg-sidebar-top: 0;
   --dg-sidebar-container-height: 100vh;
@@ -792,7 +795,7 @@ body.markdown-rendered .content ol > li::marker {
   body.no-filetree.has-navbar .navbar {
     position: fixed;
     inset: 0 auto 0 0;
-    z-index: 20;
+    z-index: 10;
     box-sizing: border-box;
     width: var(--infodeck-left-rail-width);
     height: 100vh;
@@ -847,33 +850,29 @@ body.markdown-rendered .content ol > li::marker {
 
   body.no-filetree.has-navbar > aside .sidebar {
     position: fixed !important;
-    inset: 0 0 0 calc(
-      var(--infodeck-content-left) +
-      var(--dg-content-max-width) +
-      var(--infodeck-shell-gap)
-    ) !important;
+    inset: 230px auto 0 0 !important;
+    z-index: 20;
     box-sizing: border-box;
-    width: auto;
-    min-width: var(--dg-sidebar-min-width);
-    max-width: none;
-    height: 100vh;
+    width: var(--infodeck-left-rail-width);
+    min-width: 0;
+    max-width: var(--infodeck-left-rail-width);
+    height: calc(100vh - 230px);
     margin: 0;
     padding: 0;
     display: block;
-    background: var(--background-secondary);
+    background: transparent;
     border: 0;
-    border-left: 1px solid var(--background-modifier-border);
   }
 
   body.no-filetree.has-navbar > aside .sidebar-container {
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
-    padding: var(--dg-sidebar-container-padding);
+    height: 100%;
+    padding: 0 24px 28px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
     background: transparent;
   }
 
@@ -893,8 +892,8 @@ body.markdown-rendered .content ol > li::marker {
 @media (min-width: 1001px) and (max-width: 1500px) {
   :root,
   .theme-dark {
-    --infodeck-left-rail-width: 220px;
-    --infodeck-shell-gap: 28px;
+    --infodeck-left-rail-width: 240px;
+    --infodeck-shell-gap: 24px;
     --dg-content-max-width: 680px;
   }
 }
