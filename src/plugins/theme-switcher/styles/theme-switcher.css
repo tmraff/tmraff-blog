@@ -74,3 +74,11 @@ html:not([data-dg-theme]) .dg-theme-toggle__icon--moon {
     border: 0;
   }
 }
+
+@media (min-width: 1001px) {
+  body.no-filetree.has-navbar .navbar .dg-theme-toggle {
+    width: 100%;
+    margin-top: auto;
+    flex: 0 0 auto;
+  }
+}
