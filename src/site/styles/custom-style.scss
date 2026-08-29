@@ -2,6 +2,11 @@
 Whatever AI grabbed from my own Obsidian theme.css
  */
 
+/*
+ * InfoDeck for Digital Garden
+ * Palette: Seventy Seven
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Share+Tech+Mono&display=swap");
 
 :root,
@@ -79,6 +84,9 @@ Whatever AI grabbed from my own Obsidian theme.css
   --font-header: "Orbitron", "Oxanium", Helvetica, sans-serif;
   --font-code: var(--font-monospace-default);
 
+  /* One restrained radius for rectangular interface and reading surfaces. */
+  --infodeck-radius: 4px;
+
   --dg-content-max-width: 760px;
   --dg-content-font-size: 17px;
   --dg-content-line-height: 1.65;
@@ -136,7 +144,7 @@ button,
 input,
 .search-button {
   border: 1px solid var(--background-modifier-border);
-  border-radius: 0;
+  border-radius: var(--infodeck-radius);
   background: var(--background-primary-alt);
   color: var(--text-normal);
   font-family: var(--font-interface-theme);
@@ -267,6 +275,7 @@ blockquote {
   margin: 1.5em 0;
   padding: 0.8em 1em;
   border: 0;
+  border-radius: var(--infodeck-radius);
   border-left: 2px solid var(--color-cyan);
   background: rgba(var(--color-cyan-rgb), 0.055);
   color: var(--text-muted);
@@ -286,7 +295,7 @@ kbd {
 :not(pre) > code {
   padding: 0.12em 0.35em;
   border: 1px solid rgba(var(--color-red-rgb), 0.38);
-  border-radius: 0;
+  border-radius: var(--infodeck-radius);
   background: var(--background-secondary);
   color: var(--color-orange);
 }
@@ -294,7 +303,7 @@ kbd {
 pre {
   border: 1px solid var(--background-modifier-border);
   border-left: 2px solid var(--color-red);
-  border-radius: 0;
+  border-radius: var(--infodeck-radius);
   background: var(--background-secondary);
   box-shadow: inset 0 1px 0 rgba(var(--color-cyan-rgb), 0.08);
 }
@@ -302,6 +311,8 @@ pre {
 /* Tables */
 table {
   border-collapse: collapse;
+  border-radius: var(--infodeck-radius);
+  overflow: hidden;
 }
 
 th {
@@ -684,6 +695,7 @@ body.markdown-rendered .content strong {
 
 body.markdown-rendered .content mark {
   padding: 0.15em 1em;
+  border-radius: var(--infodeck-radius);
   background: var(--color-tertiary);
   color: var(--background-primary);
   font-weight: 700;
@@ -710,7 +722,7 @@ body.markdown-rendered .content pre {
   box-sizing: border-box;
   padding: 1rem var(--spacing-xl);
   border: 0;
-  border-radius: 0;
+  border-radius: var(--infodeck-radius);
   background: var(--code-background);
   box-shadow: none;
   clip-path: none;
@@ -729,6 +741,7 @@ body.markdown-rendered .content pre::after {
 body.markdown-rendered .content :not(pre) > code {
   padding: 0.15em 1em;
   border: 0;
+  border-radius: var(--infodeck-radius);
   background: var(--code-background);
   color: var(--text-normal);
 }
@@ -739,7 +752,7 @@ body.markdown-rendered .content blockquote {
   margin: 1.5em 0;
   padding: var(--spacing-md) var(--spacing-lg);
   border: 0;
-  border-radius: 0;
+  border-radius: var(--infodeck-radius);
   background: var(--blockquote-background-color);
   color: var(--text-normal);
   font-family: "Oxanium", var(--font-text-theme);
@@ -891,155 +904,4 @@ body.markdown-rendered .content img[alt$="png-pink"] { filter: var(--png-filter-
 body.markdown-rendered .content ul:not(.task-list) > li::marker,
 body.markdown-rendered .content ol > li::marker {
   color: inherit !important;
-}
-
-/* ========================================================================== */
-/* Single-column garden shell                                                 */
-/* Left rail: identity, search, outline and backlinks. Main: centred note.    */
-/* ========================================================================== */
-
-:root,
-.theme-dark {
-  --infodeck-left-rail-width: 280px;
-  --infodeck-shell-gap: 32px;
-  --infodeck-content-left: max(
-    calc(var(--infodeck-left-rail-width) + var(--infodeck-shell-gap)),
-    calc(
-      var(--infodeck-left-rail-width) +
-      (100vw - var(--infodeck-left-rail-width) - var(--dg-content-max-width)) / 2
-    )
-  );
-  --dg-sidebar-top: 0;
-  --dg-sidebar-container-height: 100vh;
-  --dg-sidebar-container-padding: 28px;
-}
-
-@media (min-width: 1001px) {
-  body.no-filetree.has-navbar .navbar {
-    position: fixed;
-    inset: 0 auto 0 0;
-    z-index: 10;
-    box-sizing: border-box;
-    width: var(--infodeck-left-rail-width);
-    height: 100vh;
-    padding: 36px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 24px;
-    background: var(--background-secondary);
-    border: 0;
-    border-right: 1px solid var(--background-modifier-border);
-    box-shadow: none;
-  }
-
-  body.no-filetree.has-navbar .navbar-inner,
-  body.no-filetree.has-navbar .navbar-inner > a {
-    display: block;
-    width: 100%;
-  }
-
-  body.no-filetree.has-navbar .navbar h1 {
-    margin: 0 !important;
-    color: var(--color-primary) !important;
-    font-family: var(--font-header) !important;
-    font-size: 1.55rem !important;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.035em;
-    text-transform: uppercase;
-  }
-
-  body.no-filetree.has-navbar .navbar h1::after {
-    content: "_";
-    margin-left: var(--spacing-xs);
-  }
-
-  body.no-filetree.has-navbar .navbar .search-button {
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    justify-content: flex-start;
-  }
-
-  body.no-filetree.has-navbar .content {
-    margin-top: 0;
-    margin-left: var(--infodeck-content-left);
-    margin-right: auto;
-    padding-top: var(--dg-content-padding-top);
-  }
-
-  body.no-filetree.has-navbar > aside .sidebar {
-    position: fixed !important;
-    inset: 230px auto 0 0 !important;
-    z-index: 20;
-    box-sizing: border-box;
-    width: var(--infodeck-left-rail-width);
-    min-width: 0;
-    max-width: var(--infodeck-left-rail-width);
-    height: calc(100vh - 230px);
-    margin: 0;
-    padding: 0;
-    display: block;
-    background: transparent;
-    border: 0;
-  }
-
-  body.no-filetree.has-navbar > aside .sidebar-container {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 0 24px 28px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    background: transparent;
-  }
-
-  body.no-filetree.has-navbar > aside .toc,
-  body.no-filetree.has-navbar > aside .toc-container,
-  body.no-filetree.has-navbar > aside .backlinks {
-    width: 100%;
-    max-width: none;
-  }
-
-  body.no-filetree.has-navbar > aside .toc-container {
-    max-height: none;
-  }
-}
-
-/* Keep the centre column usable before the standard mobile layout takes over. */
-@media (min-width: 1001px) and (max-width: 1500px) {
-  :root,
-  .theme-dark {
-    --infodeck-left-rail-width: 240px;
-    --infodeck-shell-gap: 24px;
-    --dg-content-max-width: 680px;
-  }
-}
-
-@media (min-width: 1001px) {
-  body.no-filetree.has-navbar .navbar .search-button,
-  body.no-filetree.has-navbar .sidebar-container .dg-theme-toggle {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: var(--dg-search-btn-height, 32px);
-    border: 1px solid var(--background-modifier-border);
-    border-radius: 4px;
-    background: var(--background-primary-alt);
-    color: var(--text-muted);
-    box-shadow: none;
-  }
-
-  body.no-filetree.has-navbar .navbar .search-button:hover,
-  body.no-filetree.has-navbar .navbar .search-button:focus-visible,
-  body.no-filetree.has-navbar .sidebar-container .dg-theme-toggle:hover,
-  body.no-filetree.has-navbar .sidebar-container .dg-theme-toggle:focus-visible {
-    border-color: var(--color-primary);
-    background: var(--background-secondary-alt);
-    color: var(--color-primary);
-  }
 }
