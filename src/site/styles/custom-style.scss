@@ -767,20 +767,20 @@ body.markdown-rendered .content .callout[data-callout="nav"] .callout-content > 
 }
 
 /* Opt-in filters set through Obsidian aliases: ![[image.png|png-red]], etc. */
-body.markdown-rendered .content img[alt~="png-legible"] {
+body.markdown-rendered .content img[alt$="png-legible"] {
   filter: var(--png-filter-legible);
 }
 
-body.markdown-rendered .content img[alt~="png-white"] { filter: var(--png-filter-white); }
-body.markdown-rendered .content img[alt~="png-black"] { filter: var(--png-filter-black); }
-body.markdown-rendered .content img[alt~="png-red"] { filter: var(--png-filter-red); }
-body.markdown-rendered .content img[alt~="png-orange"] { filter: var(--png-filter-orange); }
-body.markdown-rendered .content img[alt~="png-yellow"] { filter: var(--png-filter-yellow); }
-body.markdown-rendered .content img[alt~="png-green"] { filter: var(--png-filter-green); }
-body.markdown-rendered .content img[alt~="png-cyan"] { filter: var(--png-filter-cyan); }
-body.markdown-rendered .content img[alt~="png-blue"] { filter: var(--png-filter-blue); }
-body.markdown-rendered .content img[alt~="png-purple"] { filter: var(--png-filter-purple); }
-body.markdown-rendered .content img[alt~="png-pink"] { filter: var(--png-filter-pink); }
+body.markdown-rendered .content img[alt$="png-white"] { filter: var(--png-filter-white); }
+body.markdown-rendered .content img[alt$="png-black"] { filter: var(--png-filter-black); }
+body.markdown-rendered .content img[alt$="png-red"] { filter: var(--png-filter-red); }
+body.markdown-rendered .content img[alt$="png-orange"] { filter: var(--png-filter-orange); }
+body.markdown-rendered .content img[alt$="png-yellow"] { filter: var(--png-filter-yellow); }
+body.markdown-rendered .content img[alt$="png-green"] { filter: var(--png-filter-green); }
+body.markdown-rendered .content img[alt$="png-cyan"] { filter: var(--png-filter-cyan); }
+body.markdown-rendered .content img[alt$="png-blue"] { filter: var(--png-filter-blue); }
+body.markdown-rendered .content img[alt$="png-purple"] { filter: var(--png-filter-purple); }
+body.markdown-rendered .content img[alt$="png-pink"] { filter: var(--png-filter-pink); }
 
 /* Native list markers should remain part of the body text, not the palette. */
 body.markdown-rendered .content ul:not(.task-list) > li::marker,
