@@ -1,5 +1,5 @@
 /*
-Whatever AI grabbed from my own Obsidian theme.css to work with DG 
+Whatever AI grabbed from my own Obsidian theme.css
  */
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Share+Tech+Mono&display=swap");
@@ -503,7 +503,17 @@ a.tag:hover {
   --blockquote-border-color: var(--color-tertiary);
   --code-background: var(--background-secondary);
   --code-border-color: var(--background-modifier-border);
-  --png-filter-legible: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(813%) hue-rotate(171deg) brightness(95%) contrast(89%);
+  --png-filter-white: brightness(0) saturate(100%) invert(73%) sepia(10%) saturate(813%) hue-rotate(171deg) brightness(95%) contrast(89%);
+  --png-filter-black: brightness(0) saturate(100%) invert(5%) sepia(35%) saturate(646%) hue-rotate(212deg) brightness(86%) contrast(115%);
+  --png-filter-red: brightness(0) saturate(100%) invert(21%) sepia(74%) saturate(6361%) hue-rotate(347deg) brightness(91%) contrast(98%);
+  --png-filter-orange: brightness(0) saturate(100%) invert(45%) sepia(79%) saturate(859%) hue-rotate(357deg) brightness(103%) contrast(109%);
+  --png-filter-yellow: brightness(0) saturate(100%) invert(90%) sepia(60%) saturate(2402%) hue-rotate(342deg) brightness(109%) contrast(107%);
+  --png-filter-green: brightness(0) saturate(100%) invert(72%) sepia(18%) saturate(6463%) hue-rotate(65deg) brightness(115%) contrast(104%);
+  --png-filter-cyan: brightness(0) saturate(100%) invert(77%) sepia(28%) saturate(5737%) hue-rotate(136deg) brightness(108%) contrast(109%);
+  --png-filter-blue: brightness(0) saturate(100%) invert(57%) sepia(29%) saturate(904%) hue-rotate(158deg) brightness(100%) contrast(88%);
+  --png-filter-purple: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(4235%) hue-rotate(277deg) brightness(115%) contrast(130%);
+  --png-filter-pink: brightness(0) saturate(100%) invert(35%) sepia(76%) saturate(7335%) hue-rotate(316deg) brightness(127%) contrast(139%);
+  --png-filter-legible: var(--png-filter-white);
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 0.75rem;
@@ -756,13 +766,21 @@ body.markdown-rendered .content .callout[data-callout="nav"] .callout-content > 
   margin: 0;
 }
 
-/* Image filters remain opt-in. Never filter every source PNG globally. */
-body.markdown-rendered .content .png-legible img,
-body.markdown-rendered .content picture.png-legible img,
-body.markdown-rendered .content img.png-legible,
-body.png-legible.markdown-rendered .content picture img {
+/* Opt-in filters set through Obsidian aliases: ![[image.png|png-red]], etc. */
+body.markdown-rendered .content img[alt~="png-legible"] {
   filter: var(--png-filter-legible);
 }
+
+body.markdown-rendered .content img[alt~="png-white"] { filter: var(--png-filter-white); }
+body.markdown-rendered .content img[alt~="png-black"] { filter: var(--png-filter-black); }
+body.markdown-rendered .content img[alt~="png-red"] { filter: var(--png-filter-red); }
+body.markdown-rendered .content img[alt~="png-orange"] { filter: var(--png-filter-orange); }
+body.markdown-rendered .content img[alt~="png-yellow"] { filter: var(--png-filter-yellow); }
+body.markdown-rendered .content img[alt~="png-green"] { filter: var(--png-filter-green); }
+body.markdown-rendered .content img[alt~="png-cyan"] { filter: var(--png-filter-cyan); }
+body.markdown-rendered .content img[alt~="png-blue"] { filter: var(--png-filter-blue); }
+body.markdown-rendered .content img[alt~="png-purple"] { filter: var(--png-filter-purple); }
+body.markdown-rendered .content img[alt~="png-pink"] { filter: var(--png-filter-pink); }
 
 /* Native list markers should remain part of the body text, not the palette. */
 body.markdown-rendered .content ul:not(.task-list) > li::marker,
