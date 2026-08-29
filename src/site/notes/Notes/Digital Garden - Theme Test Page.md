@@ -1,8 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/notes/digital-garden-theme-test-page/","created":"2026-08-29T13:35:18.472+01:00","updated":"2026-08-29T13:54:50.500+01:00","dg-note-properties":{"created":"2026-08-29-13:18","updated":"2026-08-29-13:19","cssclasses":["png-legible"]}}
+{"dg-publish":true,"permalink":"/notes/digital-garden-theme-test-page/","created":"2026-08-29T13:35:18.472+01:00","updated":"2026-08-29T15:26:58.584+01:00","dg-note-properties":{"created":"2026-08-29-13:18","updated":"2026-08-29-15:59","cssclasses":null}}
 ---
 
 # Theme Test
+
+## Headings (H2)
+
+### H3
+
+#### H4
+
+##### H5
+
+###### H6
 
 ## Text styling
 
@@ -51,27 +61,7 @@ $$here is a maths block$$
 ## Checkboxes
 
 - [ ] todo
-- [/] incomplete
 - [x] done
-- [-] cancelled
-- [>] forwarded
-- [<] scheduled
-- [?] question
-- [!] important
-- [*] star
-- ["] quote
-- [l] location
-- [b] bookmark
-- [i] information
-- [S] savings
-- [I] idea
-- [p] pros
-- [c] cons
-- [f] fire
-- [k] key
-- [w] win
-- [u] up
-- [d] down
 
 ## Blockquotes
 
@@ -137,4 +127,4 @@ Here is a Nav callout:
 ## PNGs
 
 Here is a filtered PNG:
-![rafferty-logo-1.png](/img/user/Notes/rafferty-logo-1.png)
+![rafferty-logo-1.png\|png-legible](/img/user/Notes/rafferty-logo-1.png)
