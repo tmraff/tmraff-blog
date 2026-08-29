@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/templates/","title":"Templates","created":"2026-08-27T21:58:29.061+01:00","updated":"2026-08-27T22:13:59.082+01:00","dg-note-properties":{"created":"2026-08-27-21:29","updated":"2026-08-27-22:23","title":"Templates"}}
+{"dg-publish":true,"permalink":"/notes/templates/","title":"Templates","created":"2026-08-27T21:58:29.061+01:00","updated":"2026-08-27T22:14:27.082+01:00","dg-note-properties":{"created":"2026-08-27-21:29","updated":"2026-08-27-22:27","title":"Templates"}}
 ---
 
 # Templates
