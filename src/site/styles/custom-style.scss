@@ -2,6 +2,14 @@
 Whatever AI grabbed from my own Obsidian theme.css
  */
 
+/*
+ * InfoDeck for Digital Garden
+ * Palette: Seventy Seven
+ *
+ * Place this file at:
+ * src/site/styles/user/infodeck.scss
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Share+Tech+Mono&display=swap");
 
 :root,
@@ -519,6 +527,111 @@ a.tag:hover {
   --spacing-md: 0.75rem;
   --spacing-lg: 1rem;
   --spacing-xl: 1.5rem;
+}
+
+/* ========================================================================== */
+/* Colour modes                                                               */
+/* The stylesheet owns the palettes; the theme-switcher plugin only selects.  */
+/* ========================================================================== */
+
+html[data-dg-theme="dark"],
+body.theme-dark {
+  color-scheme: dark;
+}
+
+html[data-dg-theme="light"],
+body.theme-light {
+  color-scheme: light;
+
+  /* HUD Theme light neutrals */
+  --infodeck-black: #f8fdff;
+  --infodeck-ink: #f8fdff;
+  --infodeck-panel: #e9f3f7;
+  --infodeck-panel-raised: #d8e7ef;
+  --infodeck-line: #b7ccd7;
+  --infodeck-text: #091829;
+  --infodeck-muted: #5d6e7d;
+  --infodeck-faint: #9daab4;
+
+  --color-base-00: #f8fdff;
+  --color-base-100: #091829;
+  --color-base-05: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 5%);
+  --color-base-10: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 10%);
+  --color-base-15: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 15%);
+  --color-base-20: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 20%);
+  --color-base-30: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 30%);
+  --color-base-50: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 50%);
+  --color-base-70: color-mix(in srgb, var(--color-base-00), var(--color-base-100) 70%);
+
+  /* HUD Theme light accents */
+  --color-red: #ff4b5c;
+  --color-orange: #ff9a3c;
+  --color-yellow: #fffc58;
+  --color-green: #00ffa2;
+  --color-cyan: #2ffaff;
+  --color-blue: #00aaff;
+  --color-purple: #ae8fff;
+  --color-pink: #ff7fff;
+
+  --color-red-rgb: 255, 75, 92;
+  --color-orange-rgb: 255, 154, 60;
+  --color-yellow-rgb: 255, 252, 88;
+  --color-green-rgb: 0, 255, 162;
+  --color-cyan-rgb: 47, 250, 255;
+  --color-blue-rgb: 0, 170, 255;
+  --color-purple-rgb: 174, 143, 255;
+  --color-pink-rgb: 255, 127, 255;
+
+  --color-primary: var(--color-yellow);
+  --color-secondary: var(--color-cyan);
+  --color-tertiary: var(--color-red);
+  --color-info: var(--color-pink);
+  --color-success: var(--color-green);
+  --color-warning: var(--color-orange);
+  --color-error: var(--color-red);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: #e9f3f7;
+  --background-secondary: #d8e7ef;
+  --background-secondary-alt: #c4dce6;
+  --background-modifier-border: #b7ccd7;
+  --background-modifier-border-hover: var(--color-blue);
+  --background-modifier-hover: rgba(var(--color-blue-rgb), 0.08);
+  --background-modifier-active-hover: rgba(var(--color-yellow-rgb), 0.16);
+  --interactive-normal: #d8e7ef;
+  --interactive-hover: #c4dce6;
+  --interactive-accent: var(--color-red);
+  --interactive-accent-hover: var(--color-blue);
+
+  --text-normal: var(--color-base-100);
+  --text-muted: #5d6e7d;
+  --text-faint: #9daab4;
+  --text-accent: #006fa8;
+  --text-accent-hover: #b30018;
+  --text-on-accent: var(--color-base-100);
+  --text-on-accent-inverted: var(--color-base-00);
+  --link-color: #b30018;
+  --link-color-hover: #006fa8;
+  --link-unresolved-color: #b30018;
+
+  --graph-main: #b30018;
+  --graph-muted: var(--infodeck-faint);
+  --blockquote-background-color: var(--background-secondary);
+  --blockquote-border-color: var(--color-tertiary);
+  --code-background: var(--background-secondary);
+  --code-border-color: var(--background-modifier-border);
+
+  --png-filter-white: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(2346%) hue-rotate(175deg) brightness(97%) contrast(109%);
+  --png-filter-black: brightness(0) saturate(100%) invert(6%) sepia(52%) saturate(1654%) hue-rotate(188deg) brightness(97%) contrast(96%);
+  --png-filter-red: brightness(0) saturate(100%) invert(36%) sepia(90%) saturate(1179%) hue-rotate(326deg) brightness(106%) contrast(111%);
+  --png-filter-orange: brightness(0) saturate(100%) invert(75%) sepia(21%) saturate(3033%) hue-rotate(329deg) brightness(100%) contrast(103%);
+  --png-filter-yellow: brightness(0) saturate(100%) invert(100%) sepia(28%) saturate(5058%) hue-rotate(329deg) brightness(113%) contrast(102%);
+  --png-filter-green: brightness(0) saturate(100%) invert(84%) sepia(14%) saturate(4459%) hue-rotate(93deg) brightness(104%) contrast(101%);
+  --png-filter-cyan: brightness(0) saturate(100%) invert(81%) sepia(56%) saturate(1242%) hue-rotate(145deg) brightness(103%) contrast(103%);
+  --png-filter-blue: brightness(0) saturate(100%) invert(47%) sepia(92%) saturate(1577%) hue-rotate(168deg) brightness(97%) contrast(110%);
+  --png-filter-purple: brightness(0) saturate(100%) invert(52%) sepia(87%) saturate(295%) hue-rotate(214deg) brightness(101%) contrast(102%);
+  --png-filter-pink: brightness(0) saturate(100%) invert(72%) sepia(19%) saturate(2361%) hue-rotate(251deg) brightness(101%) contrast(105%);
+  --png-filter-legible: var(--png-filter-black);
 }
 
 html,
