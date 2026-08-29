@@ -1,0 +1,13 @@
+{
+  "id": "infodeck-navigation",
+  "name": "InfoDeck Navigation",
+  "version": "1.0.0",
+  "description": "Replaces the default navigation with a single left rail containing the site identity, search, outline, backlinks and extension actions.",
+  "author": "tmraff",
+  "regions": {
+    "navigation": "templates/navigation.njk"
+  },
+  "styles": [
+    "styles/navigation.css"
+  ]
+}

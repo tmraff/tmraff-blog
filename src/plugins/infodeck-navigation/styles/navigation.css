@@ -1,0 +1,194 @@
+:root {
+  --infodeck-left-rail-width: 280px;
+  --infodeck-shell-gap: 32px;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.infodeck-navigation__mobile,
+.infodeck-navigation__overlay {
+  display: none;
+}
+
+.infodeck-navigation__rail {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 30;
+  box-sizing: border-box;
+  width: var(--infodeck-left-rail-width);
+  padding: 36px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  background: var(--background-secondary);
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.infodeck-navigation__identity,
+.infodeck-navigation__actions,
+.infodeck-navigation__bottom {
+  flex: 0 0 auto;
+}
+
+.infodeck-navigation__title {
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-header);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.035em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.infodeck-navigation__title > span::after {
+  content: "_";
+  margin-left: 0.25rem;
+}
+
+.infodeck-navigation__actions .search-button,
+.infodeck-navigation__bottom .dg-theme-toggle {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: var(--dg-search-btn-height, 32px);
+  border-radius: var(--infodeck-radius, 4px);
+}
+
+/* The theme switcher offers itself to every navigation slot. In this rail,
+ * search belongs near the top and the single theme control belongs below. */
+.infodeck-navigation__actions .dg-theme-toggle,
+.infodeck-navigation__bottom .search-button {
+  display: none;
+}
+
+.infodeck-navigation__scroll {
+  min-height: 0;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 28px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.infodeck-navigation .toc,
+.infodeck-navigation .toc-container,
+.infodeck-navigation .backlinks {
+  width: 100%;
+  max-width: none;
+}
+
+.infodeck-navigation .toc-container {
+  max-height: none;
+}
+
+/* The core layout still emits its sidebar after the article. The navigation
+ * plugin now owns those contents, so suppress that duplicate instance. */
+.infodeck-navigation ~ aside {
+  display: none;
+}
+
+.infodeck-navigation ~ .content {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: max(
+    calc(var(--infodeck-left-rail-width) + var(--infodeck-shell-gap)),
+    calc(
+      var(--infodeck-left-rail-width) +
+      (100vw - var(--infodeck-left-rail-width) - var(--dg-content-max-width)) / 2
+    )
+  );
+  padding-top: var(--dg-content-padding-top);
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  :root {
+    --infodeck-left-rail-width: 240px;
+    --infodeck-shell-gap: 24px;
+    --dg-content-max-width: 680px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .infodeck-navigation__mobile {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 50;
+    box-sizing: border-box;
+    min-height: 52px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .infodeck-navigation__menu {
+    padding: 6px;
+    display: inline-flex;
+  }
+
+  .infodeck-navigation__mobile-title {
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+    color: var(--color-primary);
+    font-family: var(--font-header);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .infodeck-navigation__mobile-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .infodeck-navigation__mobile-actions .dg-theme-toggle {
+    display: inline-flex;
+  }
+
+  .infodeck-navigation__overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 39;
+    display: block;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .infodeck-navigation__rail {
+    z-index: 40;
+    width: min(86vw, 300px);
+    padding: 28px 24px;
+    transform: translateX(-105%);
+    transition: transform 160ms ease;
+  }
+
+  .infodeck-navigation__rail.is-open {
+    transform: translateX(0);
+  }
+
+  .infodeck-navigation__actions .dg-theme-toggle,
+  .infodeck-navigation__bottom .dg-theme-toggle {
+    display: none;
+  }
+
+  .infodeck-navigation ~ .content {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .infodeck-navigation__rail {
+    transition: none;
+  }
+}

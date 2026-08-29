@@ -1,0 +1,138 @@
+<div class="infodeck-navigation" x-data="{ navigationOpen: false }">
+  <nav class="infodeck-navigation__mobile navbar" aria-label="Site navigation">
+    <button
+      class="infodeck-navigation__menu"
+      type="button"
+      aria-label="Open site navigation"
+      :aria-expanded="navigationOpen.toString()"
+      @click="navigationOpen = !navigationOpen"
+    >
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+
+    <a class="infodeck-navigation__mobile-title" href="/">
+      {% if meta.siteLogoPath %}
+        <img class="site-logo" src="{{ meta.siteLogoPath }}" alt="{{ meta.siteName }}">
+      {% else %}
+        <span>{{ meta.siteName }}</span>
+      {% endif %}
+    </a>
+
+    <div class="infodeck-navigation__mobile-actions">
+      {% set slotName = "navbar.actions" %}{% include "components/pluginSlot.njk" %}
+    </div>
+  </nav>
+
+  <div
+    class="infodeck-navigation__overlay"
+    x-show="navigationOpen"
+    x-cloak
+    @click="navigationOpen = false"
+  ></div>
+
+  <nav
+    class="infodeck-navigation__rail"
+    aria-label="Site navigation"
+    :class="{ 'is-open': navigationOpen }"
+  >
+    <div class="infodeck-navigation__identity">
+      {% for imp in dynamics.filetree.beforeTitle %}
+        {% include imp %}
+      {% endfor %}
+
+      <a class="infodeck-navigation__title" href="/">
+        {% if meta.siteLogoPath %}
+          <img class="site-logo" src="{{ meta.siteLogoPath }}" alt="{{ meta.siteName }}">
+        {% else %}
+          <span>{{ meta.siteName }}</span>
+        {% endif %}
+      </a>
+
+      {% for imp in dynamics.filetree.afterTitle %}
+        {% include imp %}
+      {% endfor %}
+    </div>
+
+    <div class="infodeck-navigation__actions">
+      {% set slotName = "filetree.actions" %}{% include "components/pluginSlot.njk" %}
+    </div>
+
+    <div class="infodeck-navigation__scroll">
+      {% set slotName = "sidebar.top" %}{% include "components/pluginSlot.njk" %}
+      {% for imp in dynamics.sidebar.top %}
+        {% include imp %}
+      {% endfor %}
+
+      {% if settings.dgShowLocalGraph === true %}
+        {% include "components/graphScript.njk" %}
+      {% endif %}
+
+      {% if settings.dgShowToc === true %}
+        {% set tocHtml = (content and (content | hideDataview | link | toc)) %}
+        {% if tocHtml %}
+          <section class="toc" aria-label="On this page">
+            <div class="toc-title-container">
+              <div class="toc-title">{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}</div>
+            </div>
+            <div class="toc-container">{{ tocHtml | safe }}</div>
+          </section>
+        {% endif %}
+      {% endif %}
+
+      {% if settings.dgShowBacklinks === true %}
+        <section class="backlinks" aria-label="{{ meta.uiStrings.backlinkHeader }}">
+          <div class="backlink-title">{{ meta.uiStrings.backlinkHeader }}</div>
+          <div class="backlink-list">
+            {%- set currentNode = graph.nodes[page.url] or graph.nodes[graph.homeAlias] -%}
+            {%- if currentNode -%}
+              {%- if currentNode.backLinks.length === 0 -%}
+                <div class="backlink-card">
+                  <span class="no-backlinks-message">{{ meta.uiStrings.noBacklinksMessage }}</span>
+                </div>
+              {%- endif -%}
+              {%- for backlink in currentNode.backLinks -%}
+                {%- if graph.nodes[backlink].url != page.url and not graph.nodes[backlink].private -%}
+                  <div class="backlink-card">
+                    {%- if not meta.noteIconsSettings.backlinks -%}<i data-lucide="link"></i> {%- endif -%}
+                    <a href="{{ graph.nodes[backlink].url }}" data-note-icon="{{ graph.nodes[backlink].noteIcon }}" class="backlink">{{ graph.nodes[backlink].title }}</a>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          </div>
+        </section>
+      {% endif %}
+    </div>
+
+    <div class="infodeck-navigation__bottom">
+      {% set slotName = "sidebar.bottom" %}{% include "components/pluginSlot.njk" %}
+      {% for imp in dynamics.sidebar.bottom %}
+        {% include imp %}
+      {% endfor %}
+    </div>
+  </nav>
+</div>
+
+<script>
+  (function () {
+    const tocLinks = document.querySelectorAll('.infodeck-navigation .toc-container a[href^="#"]');
+    if (!tocLinks.length) return;
+
+    const headings = Array.from(tocLinks).map((link) => {
+      const id = decodeURIComponent(link.getAttribute('href').slice(1));
+      return { link, target: document.getElementById(id) };
+    }).filter((heading) => heading.target);
+
+    function updateActive() {
+      let current = headings[0];
+      for (const heading of headings) {
+        if (heading.target.getBoundingClientRect().top <= 100) current = heading;
+      }
+      tocLinks.forEach((link) => link.classList.remove('toc-active'));
+      if (current) current.link.classList.add('toc-active');
+    }
+
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+  })();
+</script>
