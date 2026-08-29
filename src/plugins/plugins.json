@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "dg-filetree": {
+      "enabled": false
+    },
+    "infodeck-navigation": {
+      "enabled": true
+    },
+    "theme-switcher": {
+      "enabled": true
+    }
+  }
+}
