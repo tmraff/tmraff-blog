@@ -2,14 +2,6 @@
 Whatever AI grabbed from my own Obsidian theme.css
  */
 
-/*
- * InfoDeck for Digital Garden
- * Palette: Seventy Seven
- *
- * Place this file at:
- * src/site/styles/user/infodeck.scss
- */
-
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Share+Tech+Mono&display=swap");
 
 :root,
@@ -1026,5 +1018,28 @@ body.markdown-rendered .content ol > li::marker {
     --infodeck-left-rail-width: 240px;
     --infodeck-shell-gap: 24px;
     --dg-content-max-width: 680px;
+  }
+}
+
+@media (min-width: 1001px) {
+  body.no-filetree.has-navbar .navbar .search-button,
+  body.no-filetree.has-navbar .sidebar-container .dg-theme-toggle {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: var(--dg-search-btn-height, 32px);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-primary-alt);
+    color: var(--text-muted);
+    box-shadow: none;
+  }
+
+  body.no-filetree.has-navbar .navbar .search-button:hover,
+  body.no-filetree.has-navbar .navbar .search-button:focus-visible,
+  body.no-filetree.has-navbar .sidebar-container .dg-theme-toggle:hover,
+  body.no-filetree.has-navbar .sidebar-container .dg-theme-toggle:focus-visible {
+    border-color: var(--color-primary);
+    background: var(--background-secondary-alt);
+    color: var(--color-primary);
   }
 }
