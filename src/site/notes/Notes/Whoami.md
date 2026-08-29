@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/whoami/","title":"Whoami","created":"2026-08-27T19:55:37.062+01:00","updated":"2026-08-27T22:04:37.583+01:00","dg-note-properties":{"created":"2026-08-27-19:37","updated":"2026-08-27-21:14","title":"Whoami"}}
+{"dg-publish":true,"permalink":"/notes/whoami/","title":"Whoami","created":"2026-08-27T19:55:37.062+01:00","updated":"2026-08-29T14:56:51.260+01:00","dg-note-properties":{"created":"2026-08-27-19:37","updated":"2026-08-29-14:51","title":"Whoami"}}
 ---
 
 # whoami
@@ -13,6 +13,8 @@ Hello! I’m Tristan and I’m an artist, writer, cyber security student, and zi
 ## Where else can you find my work?
 
 You can find my work on my [GitHub page](https://github.com/tmraff) and on Gaada’s [online shop](https://www.gaada.org/shop?tag=Tristan+Rafferty). You can find my science fiction, fantasy, and horror reviews in the [BSFA Review](https://bsfa.co.uk/the-bsfa-review), currently edited by Ruth Watkin. You are also welcome to email me if you have questions about anything more specific.
+
+You can find a list of things I have done in [[Notes/Public CV\|Public CV]].
 
 ## How should you support me?
 

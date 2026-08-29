@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/index/","title":"Index","tags":["gardenEntry"],"created":"2026-08-25T14:11:47.411+01:00","updated":"2026-08-27T22:05:42.840+01:00","dg-note-properties":{"created":"2026-08-25-14:47","updated":"2026-08-27-22:42","title":"Index"}}
+{"dg-publish":true,"permalink":"/notes/index/","title":"Index","tags":["gardenEntry"],"created":"2026-08-25T14:11:47.411+01:00","updated":"2026-08-29T14:56:02.391+01:00","dg-note-properties":{"created":"2026-08-25-14:47","updated":"2026-08-29-14:02","title":"Index"}}
 ---
 
 
@@ -18,14 +18,14 @@ Peruse the files I most recently published:
 <!-- QueryToSerialize: LIST
 FROM ""
 WHERE dg-publish = true
-SORT created ASC
+SORT created DESC
 LIMIT 5  -->
-<!-- SerializedQuery: LIST FROM "" WHERE dg-publish = true SORT created ASC LIMIT 5 -->
-- [[Notes/List - Cosmic Horror TBR\|List - Cosmic Horror TBR]]
-- [[Notes/Index\|Index]]
-- [[Notes/CC BY-SA Licence\|CC BY-SA Licence]]
-- [[Notes/Whoami\|Whoami]]
+<!-- SerializedQuery: LIST FROM "" WHERE dg-publish = true SORT created DESC LIMIT 5 -->
+- [[Notes/Public CV\|Public CV]]
+- [[Notes/Digital Garden - Theme Test Page\|Digital Garden - Theme Test Page]]
+- [[Notes/Templates\|Templates]]
 - [[Notes/Colophon\|Colophon]]
+- [[Notes/Whoami\|Whoami]]
 
 <!-- SerializedQuery END -->
 
@@ -33,9 +33,10 @@ LIMIT 5  -->
 
 ## Info
 
-The boring bits:
+Things about Root Directory and me:
 
-- [[Notes/Colophon\|Colophon]]
 - [[Notes/Whoami\|Whoami]]
+- [[Notes/Public CV\|Public CV]]
+- [[Notes/Colophon\|Colophon]]
 - [[Notes/CC BY-SA Licence\|CC BY-SA Licence]]
 - [[Notes/Templates\|Templates]]

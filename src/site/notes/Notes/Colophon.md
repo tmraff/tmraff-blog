@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/colophon/","title":"Colophon","created":"2026-08-27T21:28:12.278+01:00","updated":"2026-08-27T22:06:11.132+01:00","dg-note-properties":{"created":"2026-08-27-21:12","updated":"2026-08-27-22:11","title":"Colophon"}}
+{"dg-publish":true,"permalink":"/notes/colophon/","title":"Colophon","created":"2026-08-27T21:28:12.278+01:00","updated":"2026-08-29T13:59:37.099+01:00","dg-note-properties":{"created":"2026-08-27-21:12","updated":"2026-08-29-13:37","title":"Colophon"}}
 ---
 
 # Colophon
@@ -14,7 +14,7 @@ Root Directory is navigable by link rather than folder. This is primarily becaus
 
 ## Design
 
-Currently, the site uses the [Cybertron theme](https://github.com/nickmilo/Cybertron). This is temporary. I will eventually update the styles myself.
+I am currently working on styling this site in a way that is similar to my vault. You can check out most of the styling looks [[Notes/Digital Garden - Theme Test Page\|here]].
 
 ## Source
 
