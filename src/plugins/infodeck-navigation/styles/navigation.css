@@ -56,7 +56,8 @@
   width: 100%;
   min-width: 0;
   min-height: var(--dg-search-btn-height, 32px);
-  border-radius: var(--infodeck-radius, 4px);
+  border-radius: 0;
+  clip-path: var(--infodeck-control-shape);
 }
 
 /* The theme switcher offers itself to every navigation slot. In this rail,
