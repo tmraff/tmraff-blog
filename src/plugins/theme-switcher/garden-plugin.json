@@ -1,8 +1,8 @@
 {
   "id": "theme-switcher",
   "name": "Theme Switcher",
-  "version": "1.1.1",
-  "description": "Adds a persistent light and dark mode switch that defaults to the visitor's system preference.",
+  "version": "2.0.0",
+  "description": "Cycles persistently between the Seventy-Seven, MU-TH-UR and E-ink InfoDeck palettes.",
   "author": "tmraff",
   "slots": {
     "navbar.actions": "templates/toggle.njk",

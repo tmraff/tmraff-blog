@@ -11,12 +11,13 @@
   justify-content: center;
   gap: var(--dg-search-btn-gap, 8px);
   border: 1px solid var(--background-modifier-border);
-  border-radius: var(--dg-search-btn-radius, 8px);
+  border-radius: 0;
   background: var(--background-secondary);
   color: var(--text-muted);
   font: inherit;
   font-size: var(--dg-search-btn-font-size, 0.85rem);
   cursor: pointer;
+  clip-path: var(--infodeck-control-shape);
   transition: color 120ms ease, background-color 120ms ease, border-color 120ms ease;
 }
 
@@ -40,25 +41,6 @@
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 1.8;
-}
-
-html[data-dg-theme="dark"] .dg-theme-toggle__icon--moon,
-html[data-dg-theme="light"] .dg-theme-toggle__icon--sun {
-  display: none;
-}
-
-html:not([data-dg-theme]) .dg-theme-toggle__icon--moon {
-  display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html:not([data-dg-theme]) .dg-theme-toggle__icon--moon {
-    display: inline;
-  }
-
-  html:not([data-dg-theme]) .dg-theme-toggle__icon--sun {
-    display: none;
-  }
 }
 
 @media (max-width: 600px) {

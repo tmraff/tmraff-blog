@@ -1,14 +1,19 @@
 (() => {
   "use strict";
 
-  const storageKey = "digital-garden-colour-theme";
+  const storageKey = "infodeck-palette";
   const root = document.documentElement;
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+  const themes = ["seventy-seven", "mu-th-ur", "e-ink"];
+  const labels = {
+    "seventy-seven": "Seventy-Seven",
+    "mu-th-ur": "MU-TH-UR",
+    "e-ink": "E-ink"
+  };
 
   function readPreference() {
     try {
       const preference = window.localStorage.getItem(storageKey);
-      return preference === "light" || preference === "dark" ? preference : null;
+      return themes.includes(preference) ? preference : null;
     } catch (_error) {
       return null;
     }
@@ -23,23 +28,25 @@
   }
 
   function updateButtons(theme) {
-    const target = theme === "dark" ? "light" : "dark";
+    const next = themes[(themes.indexOf(theme) + 1) % themes.length];
 
     document.querySelectorAll("[data-dg-theme-toggle]").forEach((button) => {
-      const label = `Switch to ${target} mode`;
+      const label = `Palette: ${labels[theme]}. Switch to ${labels[next]}`;
       button.setAttribute("aria-label", label);
       button.setAttribute("title", label);
-      button.setAttribute("aria-pressed", String(theme === "dark"));
+      button.dataset.dgThemeCurrent = theme;
+      const text = button.querySelector("[data-dg-theme-label]");
+      if (text) text.textContent = labels[theme];
     });
   }
 
   function applyTheme(theme, persist = false) {
     root.dataset.dgTheme = theme;
-    root.style.colorScheme = theme;
+    root.style.colorScheme = theme === "seventy-seven" ? "dark" : "light";
 
     if (document.body) {
-      document.body.classList.toggle("theme-light", theme === "light");
-      document.body.classList.toggle("theme-dark", theme === "dark");
+      document.body.classList.toggle("theme-dark", theme === "seventy-seven");
+      document.body.classList.toggle("theme-light", theme !== "seventy-seven");
     }
 
     updateButtons(theme);
@@ -49,20 +56,15 @@
     }
   }
 
-  const savedTheme = readPreference();
-  applyTheme(savedTheme || (systemTheme.matches ? "dark" : "light"));
+  applyTheme(readPreference() || "seventy-seven");
 
   document.addEventListener("click", (event) => {
     const button = event.target.closest("[data-dg-theme-toggle]");
     if (!button) return;
 
-    const current = root.dataset.dgTheme === "light" ? "light" : "dark";
-    applyTheme(current === "dark" ? "light" : "dark", true);
-  });
-
-  systemTheme.addEventListener("change", (event) => {
-    if (!readPreference()) {
-      applyTheme(event.matches ? "dark" : "light");
-    }
+    const current = themes.includes(root.dataset.dgTheme)
+      ? root.dataset.dgTheme
+      : themes[0];
+    applyTheme(themes[(themes.indexOf(current) + 1) % themes.length], true);
   });
 })();
