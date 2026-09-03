@@ -2,11 +2,6 @@
 Whatever AI grabbed from my own Obsidian theme.css
  */
 
-/*
- * InfoDeck for Digital Garden
- * Palette: Seventy Seven
- */
-
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Share+Tech+Mono&display=swap");
 
 :root,
@@ -537,13 +532,12 @@ a.tag:hover {
 /* The stylesheet owns the palettes; the theme-switcher plugin only selects.  */
 /* ========================================================================== */
 
-html[data-dg-theme="dark"],
-body.theme-dark {
+html[data-dg-theme="seventy-seven"],
+html:not([data-dg-theme]) body.theme-dark {
   color-scheme: dark;
 }
 
-html[data-dg-theme="light"],
-body.theme-light {
+html:not([data-dg-theme]) body.theme-light {
   color-scheme: light;
 
   /* HUD Theme light neutrals */
@@ -905,3 +899,271 @@ body.markdown-rendered .content ul:not(.task-list) > li::marker,
 body.markdown-rendered .content ol > li::marker {
   color: inherit !important;
 }
+
+/* ========================================================================== */
+/* InfoDeck website modes                                                     */
+/* One chamfered shape system; only these palette tokens change between modes. */
+/* ========================================================================== */
+
+:root {
+  --infodeck-control-cut: 8px;
+  --infodeck-panel-cut: 16px;
+  --infodeck-quiet-cut: 12px;
+  --infodeck-label-cut: 10px;
+  --infodeck-control-shape: polygon(
+    var(--infodeck-control-cut) 0,
+    calc(100% - var(--infodeck-control-cut)) 0,
+    100% var(--infodeck-control-cut),
+    100% calc(100% - var(--infodeck-control-cut)),
+    calc(100% - var(--infodeck-control-cut)) 100%,
+    var(--infodeck-control-cut) 100%,
+    0 calc(100% - var(--infodeck-control-cut)),
+    0 var(--infodeck-control-cut)
+  );
+  --infodeck-panel-shape: polygon(
+    0 0,
+    calc(100% - var(--infodeck-panel-cut)) 0,
+    100% var(--infodeck-panel-cut),
+    100% 100%,
+    var(--infodeck-panel-cut) 100%,
+    0 calc(100% - var(--infodeck-panel-cut))
+  );
+  --infodeck-quiet-shape: polygon(
+    0 0, 100% 0, 100% calc(100% - var(--infodeck-quiet-cut)),
+    calc(100% - var(--infodeck-quiet-cut)) 100%, 0 100%
+  );
+  --infodeck-label-shape: polygon(
+    0 0, calc(100% - var(--infodeck-label-cut)) 0,
+    100% var(--infodeck-label-cut), 100% 100%, 0 100%
+  );
+
+  --color-question: var(--color-yellow);
+  --color-note: var(--color-primary);
+  --color-tip: var(--color-cyan);
+  --color-example: var(--color-blue);
+  --color-terminal: var(--color-green);
+  --color-cite: var(--color-purple);
+  --color-definition: var(--color-primary);
+  --color-neutral: var(--text-muted);
+  --color-help: var(--color-info);
+  --color-aside: var(--color-info);
+  --color-margin: var(--color-info);
+  --color-bug: var(--color-warning);
+  --color-todo: var(--color-warning);
+  --color-failure: var(--color-error);
+  --color-danger: var(--color-error);
+  --color-abstract: var(--color-note);
+  --color-bibliography: var(--color-cite);
+  --color-quote: var(--color-cite);
+  --color-transclusion: var(--color-cite);
+  --color-reference: var(--color-cite);
+}
+
+html[data-dg-theme="seventy-seven"] {
+  color-scheme: dark;
+  --color-base-00: #000005;
+  --color-base-100: #96b1cf;
+  --color-red: #e51728;
+  --color-orange: #ff7f00;
+  --color-yellow: #ffff0c;
+  --color-green: #39ff14;
+  --color-cyan: #00f9ff;
+  --color-blue: #49a7de;
+  --color-purple: #b200ff;
+  --color-pink: #ff00cc;
+  --color-red-rgb: 229, 23, 40;
+  --color-orange-rgb: 255, 127, 0;
+  --color-yellow-rgb: 255, 255, 12;
+  --color-green-rgb: 57, 255, 20;
+  --color-cyan-rgb: 0, 249, 255;
+  --color-blue-rgb: 73, 167, 222;
+  --color-purple-rgb: 178, 0, 255;
+  --color-pink-rgb: 255, 0, 204;
+  --color-primary: var(--color-yellow);
+  --color-secondary: var(--color-cyan);
+  --color-tertiary: var(--color-red);
+  --color-info: var(--color-pink);
+  --color-success: var(--color-green);
+  --color-warning: var(--color-orange);
+  --color-error: var(--color-red);
+  --background-primary: #1e232d;
+  --background-primary-alt: #171b23;
+  --background-secondary: #0f1218;
+  --background-secondary-alt: var(--color-base-00);
+  --background-modifier-border: #343b49;
+  --background-modifier-border-hover: var(--color-primary);
+  --background-modifier-hover: rgba(var(--color-yellow-rgb), 0.08);
+  --text-normal: var(--color-base-100);
+  --text-muted: #687c94;
+  --text-faint: #465568;
+  --text-accent: var(--color-tertiary);
+  --text-accent-hover: var(--color-primary);
+  --text-on-accent: var(--color-base-00);
+  --link-color: var(--color-tertiary);
+  --link-color-hover: var(--color-primary);
+  --link-unresolved-color: var(--color-error);
+}
+
+html[data-dg-theme="mu-th-ur"] {
+  color-scheme: light;
+  --color-base-00: #e8dfca;
+  --color-base-100: #251f17;
+  --color-red: #7c2019;
+  --color-orange: #9a5a12;
+  --color-yellow: #a8790d;
+  --color-green: #2f5b46;
+  --color-cyan: #35675f;
+  --color-blue: #31556b;
+  --color-purple: #65516f;
+  --color-pink: #7b3f55;
+  --color-red-rgb: 124, 32, 25;
+  --color-orange-rgb: 154, 90, 18;
+  --color-yellow-rgb: 168, 121, 13;
+  --color-green-rgb: 47, 91, 70;
+  --color-cyan-rgb: 53, 103, 95;
+  --color-blue-rgb: 49, 85, 107;
+  --color-purple-rgb: 101, 81, 111;
+  --color-pink-rgb: 123, 63, 85;
+  --color-primary: var(--color-red);
+  --color-secondary: var(--color-green);
+  --color-tertiary: var(--color-orange);
+  --color-info: var(--color-blue);
+  --color-success: var(--color-green);
+  --color-warning: var(--color-yellow);
+  --color-error: var(--color-red);
+  --background-primary: #e8dfca;
+  --background-primary-alt: #ddd1b8;
+  --background-secondary: #cfc0a3;
+  --background-secondary-alt: #bbaa88;
+  --background-modifier-border: #76664e;
+  --background-modifier-border-hover: var(--color-primary);
+  --background-modifier-hover: rgba(var(--color-red-rgb), 0.08);
+  --text-normal: #251f17;
+  --text-muted: #5f5341;
+  --text-faint: #8a7b64;
+  --text-accent: var(--color-primary);
+  --text-accent-hover: var(--color-secondary);
+  --text-on-accent: #f7f0df;
+  --link-color: var(--color-primary);
+  --link-color-hover: var(--color-secondary);
+  --link-unresolved-color: var(--color-error);
+}
+
+html[data-dg-theme="e-ink"] {
+  color-scheme: light;
+  --color-base-00: #fff;
+  --color-base-100: #000;
+  --color-red: #111;
+  --color-orange: #262626;
+  --color-yellow: #3a3a3a;
+  --color-green: #202020;
+  --color-cyan: #303030;
+  --color-blue: #181818;
+  --color-purple: #383838;
+  --color-pink: #484848;
+  --color-red-rgb: 17, 17, 17;
+  --color-orange-rgb: 38, 38, 38;
+  --color-yellow-rgb: 58, 58, 58;
+  --color-green-rgb: 32, 32, 32;
+  --color-cyan-rgb: 48, 48, 48;
+  --color-blue-rgb: 24, 24, 24;
+  --color-purple-rgb: 56, 56, 56;
+  --color-pink-rgb: 72, 72, 72;
+  --color-primary: #000;
+  --color-secondary: #202020;
+  --color-tertiary: #333;
+  --color-info: #262626;
+  --color-success: #181818;
+  --color-warning: #3a3a3a;
+  --color-error: #000;
+  --background-primary: #fff;
+  --background-primary-alt: #f2f2f2;
+  --background-secondary: #e2e2e2;
+  --background-secondary-alt: #ccc;
+  --background-modifier-border: #5c5c5c;
+  --background-modifier-border-hover: #000;
+  --background-modifier-hover: rgba(0, 0, 0, 0.08);
+  --text-normal: #000;
+  --text-muted: #292929;
+  --text-faint: #555;
+  --text-accent: #000;
+  --text-accent-hover: #444;
+  --text-on-accent: #fff;
+  --link-color: #000;
+  --link-color-hover: #444;
+  --link-unresolved-color: #000;
+}
+
+/* Shared chamfered website UI. */
+html[data-dg-theme] body {
+  background: var(--background-primary);
+  color: var(--text-normal);
+}
+
+html[data-dg-theme] :is(
+  button,
+  input,
+  select,
+  textarea,
+  .search-button,
+  .graph-controls button
+) {
+  border-radius: 0;
+  clip-path: var(--infodeck-control-shape);
+}
+
+html[data-dg-theme] :is(
+  .search-box,
+  .graph-view-container,
+  .toc,
+  .backlinks,
+  .infodeck-navigation__rail
+) {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  background: var(--background-secondary);
+  clip-path: var(--infodeck-panel-shape);
+}
+
+html[data-dg-theme] .infodeck-navigation__rail {
+  padding: 36px 24px 28px;
+}
+
+html[data-dg-theme] :is(button, a, .notelink, .foldername):hover,
+html[data-dg-theme] :is(button, input, select, textarea, a):focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+html[data-dg-theme] body.markdown-rendered .content blockquote {
+  border-left: 3px solid var(--color-cite);
+  border-radius: 0;
+  background: var(--background-secondary);
+  clip-path: var(--infodeck-quiet-shape);
+}
+
+html[data-dg-theme] body.markdown-rendered .content .callout {
+  border: 1px solid var(--callout-color);
+  background: var(--background-secondary);
+  box-shadow: none;
+  clip-path: var(--infodeck-panel-shape);
+}
+
+html[data-dg-theme] body.markdown-rendered .content .callout::before,
+html[data-dg-theme] body.markdown-rendered .content .callout::after {
+  content: none;
+}
+
+html[data-dg-theme] body.markdown-rendered .content .callout-title {
+  text-shadow: none;
+}
+
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="info"],
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="help"] { --callout-color: var(--color-info); }
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="todo"],
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="bug"] { --callout-color: var(--color-warning); }
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="question"] { --callout-color: var(--color-question); }
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="tip"] { --callout-color: var(--color-tip); }
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="quote"],
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="cite"],
+html[data-dg-theme] body.markdown-rendered .content .callout[data-callout="bibliography"] { --callout-color: var(--color-cite); }
