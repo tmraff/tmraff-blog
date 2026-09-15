@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/index/","title":"Index","tags":["gardenEntry"],"created":"2026-08-25T14:11:47.411+01:00","updated":"2026-08-29T14:56:02.391+01:00","dg-note-properties":{"created":"2026-08-25-14:47","updated":"2026-08-29-14:02","title":"Index"}}
+{"dg-publish":true,"permalink":"/notes/index/","title":"Index","tags":["gardenEntry"],"created":"2026-08-25T14:11:47.411+01:00","updated":"2026-08-30T22:25:20.129+01:00","dg-note-properties":{"created":"2026-08-25-14:47","updated":"2026-08-29-14:02","title":"Index"}}
 ---
 
 

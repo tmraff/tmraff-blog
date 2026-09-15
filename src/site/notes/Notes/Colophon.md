@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/colophon/","title":"Colophon","created":"2026-08-27T21:28:12.278+01:00","updated":"2026-08-29T13:59:37.099+01:00","dg-note-properties":{"created":"2026-08-27-21:12","updated":"2026-08-29-13:37","title":"Colophon"}}
+{"dg-publish":true,"permalink":"/notes/colophon/","title":"Colophon","created":"2026-08-27T21:28:12.278+01:00","updated":"2026-09-15T22:54:58.066+01:00","dg-note-properties":{"created":"2026-08-27T21:12","updated":"2026-09-15T22:58","title":"Colophon"}}
 ---
 
 # Colophon
@@ -14,7 +14,9 @@ Root Directory is navigable by link rather than folder. This is primarily becaus
 
 ## Design
 
-I am currently working on styling this site in a way that is similar to my vault. You can check out most of the styling looks [[Notes/Digital Garden - Theme Test Page\|here]].
+Currently, I am using the theme [Amber Cathode](https://github.com/bkindler/amber-cathode) by [Björn Kindler](https://github.com/bkindler).
+
+I may make my own theme in the future or I may not. You can find out more about that [[Notes/I tried vibe coding. I don't like it.\|here]].
 
 ## Source
 

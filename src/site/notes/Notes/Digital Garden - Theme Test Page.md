@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/digital-garden-theme-test-page/","created":"2026-08-29T13:35:18.472+01:00","updated":"2026-08-29T15:26:58.584+01:00","dg-note-properties":{"created":"2026-08-29-13:18","updated":"2026-08-29-15:59","cssclasses":null}}
+{"dg-publish":true,"permalink":"/notes/digital-garden-theme-test-page/","created":"2026-08-29T13:35:18.472+01:00","updated":"2026-08-29T15:27:27.901+01:00","dg-note-properties":{"created":"2026-08-29-13:18","updated":"2026-08-29-15:27","cssclasses":null}}
 ---
 
 # Theme Test
