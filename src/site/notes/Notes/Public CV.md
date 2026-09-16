@@ -1,18 +1,20 @@
 ---
-{"dg-publish":true,"permalink":"/notes/public-cv/","title":"Exhibitions","created":"2026-08-29T13:12:29.901+01:00","updated":"2026-08-29T14:53:52.964+01:00","dg-note-properties":{"created":"2026-08-29-13:29","updated":"2026-08-29-14:21","title":"Exhibitions"}}
+{"dg-publish":true,"permalink":"/notes/public-cv/","title":"Exhibitions","created":"2026-08-29T13:12:29.901+01:00","updated":"2026-09-16T18:45:09.843+01:00","dg-note-properties":{"created":"2026-08-29T13:29","updated":"2026-09-16T18:09","title":"Exhibitions"}}
 ---
 
 
-# Exhibitions
+# CV
 
-## Solo
+## Exhibitions
+
+### Solo
 
 |Year|Exhibition|Venue|Location|
 |---|---|---|---|
 | 2025 | _Welcome to Vagrøy_ | Toogs Artist Workshop | Shetland |
 | 2022 |_The Important Part is the Space Between_| Toogs Artist Workshop | Shetland |
 
-## Group
+### Group
 
 |Year|Exhibition|Venue|Location|
 |---|---|---|---|
@@ -23,16 +25,16 @@
 |2021|_Art & Design End of Year Show_|Shetland UHI (online & in-person)|Shetland|
 |2021|_Show Us Shetland_|Mareel (and online)|Shetland|
 
-# Publications
+## Publications
 
-## Solo
+### Solo
 
 |Year|Title|Publisher|
 |---|---|---|
 | 2025 | _Vagrøy: A Northern Isles Almanac_ | Gaada |
 | 2024 | _The Woods_ | Gaada |
 
-## Group
+### Group
 
 |Year|Title|Publisher|Notes|
 |---|---|---|---|
