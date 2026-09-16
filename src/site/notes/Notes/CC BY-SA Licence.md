@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/cc-by-sa-licence/","title":"CC BY-SA Licence","created":"2026-08-27T16:35:29.797+01:00","updated":"2026-08-27T22:05:58.344+01:00","dg-note-properties":{"created":"2026-08-27-12:57","updated":"2026-08-27-13:38","noteStatus":"budding","aliases":null,"cssclasses":[],"title":"CC BY-SA Licence"}}
+{"dg-publish":true,"permalink":"/notes/cc-by-sa-licence/","title":"CC BY-SA Licence","created":"2026-08-27T16:35:29.797+01:00","updated":"2026-09-15T23:23:36.550+01:00","dg-note-properties":{"created":"2026-08-27-12:57","updated":"2026-08-27-13:38","noteStatus":"budding","aliases":null,"cssclasses":[],"title":"CC BY-SA Licence"}}
 ---
 
 
@@ -49,7 +49,7 @@ The properties can be filled in as follows:
 
 ## Related to
 
-- [[Notes/List - Favourite Licences\|List - Favourite Licences]]
+- [[Notes/Longboi - Favourite Licences\|Longboi - Favourite Licences]]
 - [[GNU Licences\|GNU Licences]]
 - [[MIT Licence\|MIT Licence]]
 

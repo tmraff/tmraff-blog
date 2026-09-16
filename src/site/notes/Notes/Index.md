@@ -14,7 +14,7 @@ Have a poke about. Click links. You probably won't break anything. I mean, hopef
 ## Posts
 
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/notes/root-directory-recent-posts/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
@@ -32,6 +32,7 @@ LIMIT 10  -->
 - [[Notes/Index\|Index]]
 - [[Notes/Colophon\|Colophon]]
 - [[Notes/I tried vibe coding. I don't like it.\|I tried vibe coding. I don't like it.]]
+- [[Notes/Root Directory - Recent Posts\|Root Directory - Recent Posts]]
 - [[Notes/List - Cosmic Horror TBR\|List - Cosmic Horror TBR]]
 - [[Notes/CC BY-SA Licence\|CC BY-SA Licence]]
 - [[Notes/Whoami\|Whoami]]
@@ -46,7 +47,7 @@ LIMIT 10  -->
 
 
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/notes/root-directory-info/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
