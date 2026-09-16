@@ -27,6 +27,20 @@
         "timestampFormat": "yyyy-MM-dd HH:mm:ss",
         "dateFormat": "yyyy-MM-dd"
       }
+    },
+    "recently-tended": {
+      "repo": "oleeskild/garden-plugin-recently-tended",
+      "installedVersion": "1.0.0",
+      "installedRef": "v1.0.0",
+      "installedAt": "2026-09-16T17:50:51.635Z",
+      "enabled": true,
+      "files": [
+        "src/plugins/recently-tended/README.md",
+        "src/plugins/recently-tended/garden-plugin.json",
+        "src/plugins/recently-tended/index.js",
+        "src/plugins/recently-tended/styles/list.scss",
+        "src/plugins/recently-tended/templates/list.njk"
+      ]
     }
   }
 }
