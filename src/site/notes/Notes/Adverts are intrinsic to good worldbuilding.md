@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/adverts-are-intrinsic-to-good-worldbuilding/","created":"2026-07-25T13:25:18.163+01:00","updated":"2026-09-16T18:41:09.817+01:00","dg-note-properties":{"created":"2024-09-23-09:00","updated":"2026-07-16-21:55","noteStatus":"budding","aliases":null}}
+{"dg-publish":true,"permalink":"/notes/adverts-are-intrinsic-to-good-worldbuilding/","created":"2024-08-02T13:50:57.386+01:00","updated":"2026-09-16T18:41:09.817+01:00","dg-note-properties":{"created":"2024-09-23-09:00","updated":"2026-07-16-21:55","noteStatus":"budding","aliases":null}}
 ---
 
 

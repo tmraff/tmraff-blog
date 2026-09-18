@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/imperfect-work-should-be-shared/","created":"2026-07-25T13:26:01.543+01:00","updated":"2026-09-16T16:39:04.856+01:00","dg-note-properties":{"created":"2025-10-05-13:00","updated":"2026-09-02-13:56","noteStatus":"budding","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/imperfect-work-should-be-shared/","created":"2025-10-05T13:43:59.187+01:00","updated":"2026-09-16T16:39:04.856+01:00","dg-note-properties":{"created":"2025-10-05-13:00","updated":"2026-09-02-13:56","noteStatus":"budding","aliases":null,"cssclasses":[]}}
 ---
 
 
