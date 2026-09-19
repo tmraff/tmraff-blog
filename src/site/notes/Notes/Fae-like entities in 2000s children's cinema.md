@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/fae-like-entities-in-2000s-children-s-cinema/","created":"2026-04-12T21:53:52.408+01:00","updated":"2026-09-16T18:41:47.321+01:00","dg-note-properties":{"created":"2026-09-10T16:42","updated":"2026-09-16T18:58","noteStatus":"budding","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/fae-like-entities-in-2000s-children-s-cinema/","created":"2026-09-10T16:45:42.480+01:00","updated":"2026-09-16T18:41:47.321+01:00","dg-note-properties":{"created":"2026-09-10T16:42","updated":"2026-09-16T18:58","noteStatus":"budding","aliases":null,"cssclasses":[]}}
 ---
 
 

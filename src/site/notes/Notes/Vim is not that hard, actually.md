@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/vim-is-not-that-hard-actually/","title":"Vim is not that hard, actually","created":"2026-09-18T18:44:48.174+01:00","updated":"2026-09-18T20:14:49.779+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-18T20:20","title":"Vim is not that hard, actually","noteStatus":"seedling","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/vim-is-not-that-hard-actually/","title":"Vim is not that hard, actually","created":"2026-09-18T22:25:43.024+01:00","updated":"2026-09-18T22:25:43.328+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-18T20:20","title":"Vim is not that hard, actually","noteStatus":"seedling","aliases":null,"cssclasses":[]}}
 ---
 
 

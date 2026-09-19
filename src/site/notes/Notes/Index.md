@@ -15,4 +15,4 @@ Have a poke about. Click links. You probably won't break anything. I mean, hopef
 
 - [[Notes/Root Directory - Info\|Root Directory - Info]]
 - [[Notes/Root Directory - Zines\|Root Directory - Zines]]
-- [[Root Directory - Writing\|Root Directory - Writing]]
+- [[Notes/Root Directory - Writing\|Root Directory - Writing]]

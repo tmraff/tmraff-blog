@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/carmilla-s-transgression-lies-in-erotic-unease-not-romantic-queerness/","created":"2025-06-29T00:59:34.364+01:00","updated":"2026-09-17T20:58:14.216+01:00","dg-note-properties":{"created":"2025-06-29T00:34","updated":"2026-09-17T20:09","noteStatus":"seedling","aliases":null,"cssclasses":null}}
+{"dg-publish":true,"permalink":"/notes/carmilla-s-transgression-lies-in-erotic-unease-not-romantic-queerness/","created":"2026-07-25T13:25:21.839+01:00","updated":"2026-09-17T20:58:14.216+01:00","dg-note-properties":{"created":"2025-06-29T00:34","updated":"2026-09-17T20:09","noteStatus":"seedling","aliases":null,"cssclasses":null}}
 ---
 
 
