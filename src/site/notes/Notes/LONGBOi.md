@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/notes/longb-oi/","title":"LONGBOi","created":"2026-09-16T17:10:24.114+01:00","updated":"2026-09-16T18:41:13.265+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-16T18:13","title":"LONGBOi","noteStatus":"budding","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/longb-oi/","title":"LONGBOi","created":"2026-09-16T17:10:24.114+01:00","updated":"2026-09-23T00:07:12.721+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-23T00:12","title":"LONGBOi","noteStatus":"budding","aliases":null,"cssclasses":[]}}
 ---
 
 
-Back to: [[Zines\|Zines]], 
+Back to: [[Notes/Zines\|Zines]], 
 
 # LONGBOi
 
@@ -28,6 +28,8 @@ This printing method is the reason why each _LONGBOi_ is 105mm by 297mm. Each A3
 
 Each _LONGBOi_ begins with metadata because I find it funny. I chose YAML because it is human-readable, takes up little space, and I can just copy and paste it from my Obsidian notes.
 
+But beyond the humour, it also allows me to preserve something I love about Obsidian – versioning. You can see the exact date a _LONGBOi_ was printed. You can see how long it has been since I created the original Obsidian note, even. You can directly compare the dates on one _LONGBOi_ version to another and see how long it has been since I updated it.
+
 ### Typefaces
 
 Typefaces typically used in a _LONGBOi_ include:
@@ -40,13 +42,15 @@ Occasionally, you will also find icons from [Font Awesome](https://fontawesome.c
 
 ### Separations
 
-_LONGBOi_ was created with Gaada's two-drum risograph in mind. Most issues are therefore printed with just two colours. I typically use blue and yellow. Some issues also include fluo pink. 
-
-Once I've got everything set up and uploaded to [GitHub](https://github.com/tmraff/LONGBOi), you're welcome to print them in whichever colours you have access to. 
+_LONGBOi_ was created with Gaada's two-drum Risograph (MH9350) in mind. Most issues are therefore printed with just two colours. I typically use blue and yellow. Some issues also include fluo pink. 
 
 ### Licence
 
 As with almost everything I make, _LONGBOi_ is licenced under [[Notes/CC BY-SA Licence\|CC BY-SA 4.0]]. You can do whatever you want with them provided you [[Notes/CC BY-SA Licence#Attributing me\|attribute me]] and release it under the same licence.
+
+### Distribution
+
+I intend to make a Patreon page to distribute both physical and digital copies of _LONGBOi_. More on that soon. 
 
 ## Markdown Issues
 
@@ -60,17 +64,17 @@ Each issue starts as a note in my Obsidian vault. File names that begin with "Lo
 6. [[Notes/Imperfect work should be shared\|Imperfect work should be shared]]
 7. [[Notes/Longboi - Foreign Language Records You Should Listen to\|Longboi - Foreign Language Records You Should Listen to]]
 8. [[Notes/Fae-like entities in 2000s children's cinema\|Fae-like entities in 2000s children's cinema]]
-9. [[Notes/Longboi - Most Hated Shark Films\|Longboi - Most Hated Shark Films]]
+9. [[Notes/Longboi - Most Hated Shark Films\|Longboi - Most Hated Shark Films]] #in-press
 
 ---
 
 ## Related to
 
--
+- [[Informal Publishing\|Informal Publishing]]
 
 ## Ideas that stand in opposition
 
--
+- [[Traditional Publishing\|Traditional Publishing]]
 
 ## Further reading
 

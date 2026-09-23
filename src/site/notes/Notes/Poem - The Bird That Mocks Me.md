@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/poem-the-bird-that-mocks-me/","created":"2026-07-25T13:24:15.332+01:00","updated":"2026-09-19T21:04:07.146+01:00","dg-note-properties":{"created":"2026-07-25T13:15","updated":"2026-09-19T21:07","noteStatus":"budding","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/poem-the-bird-that-mocks-me/","created":"2025-05-01T15:20:47.607+01:00","updated":"2026-09-19T21:04:07.146+01:00","dg-note-properties":{"created":"2026-07-25T13:15","updated":"2026-09-19T21:07","noteStatus":"budding","aliases":null,"cssclasses":[]}}
 ---
 
 

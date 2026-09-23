@@ -5,7 +5,7 @@
 
 # Root Directory - Zines
 
-I make a lot of [[Zines\|zines]]! You can find a list of zine projects here:
+I make a lot of [[Notes/Zines\|zines]]! You can find a list of zine projects here:
 
 - [[Notes/LONGBOi\|LONGBOi]]
 - [[Notes/Sacred, Not Sticky\|Sacred, Not Sticky]]
