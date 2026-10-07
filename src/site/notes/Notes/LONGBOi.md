@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/longb-oi/","title":"LONGBOi","created":"2026-09-16T17:10:24.114+01:00","updated":"2026-09-23T00:07:12.721+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-23T00:12","title":"LONGBOi","noteStatus":"budding","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/longb-oi/","title":"LONGBOi","created":"2026-09-16T17:10:24.114+01:00","updated":"2026-09-23T15:30:00.283+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-23T15:20","title":"LONGBOi","noteStatus":"budding","aliases":null,"cssclasses":[]}}
 ---
 
 
@@ -43,6 +43,10 @@ Occasionally, you will also find icons from [Font Awesome](https://fontawesome.c
 ### Separations
 
 _LONGBOi_ was created with Gaada's two-drum Risograph (MH9350) in mind. Most issues are therefore printed with just two colours. I typically use blue and yellow. Some issues also include fluo pink. 
+
+### Paper
+
+_LONGBOi_ is printed on [Cairn Straw Cream 100gsm](https://www.paperbackpaper.co.uk/cairn/#).
 
 ### Licence
 

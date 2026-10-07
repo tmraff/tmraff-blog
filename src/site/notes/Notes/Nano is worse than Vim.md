@@ -31,7 +31,7 @@ I just don't understand why you would when Vim is right there and does everythin
 
 ## Ideas that stand in opposition
 
-- [[Nano is easier than Vim\|Nano is easier than Vim]]
+- [[Notes/Nano is easier than Vim\|Nano is easier than Vim]]
 
 ## Further reading
 

@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/notes/root-directory-writing/","created":"2026-09-19T20:59:50.993+01:00","updated":"2026-09-19T21:13:26.185+01:00","dg-note-properties":{"created":"2026-09-19T20:50","updated":"2026-09-19T21:26"}}
+{"dg-publish":true,"permalink":"/notes/root-directory-writing/","created":"2026-09-19T20:59:50.993+01:00","updated":"2026-09-24T17:54:24.631+01:00","dg-note-properties":{"created":"2026-09-19T20:50","updated":"2026-09-24T17:22"}}
 ---
+
 
 # Writing
 
@@ -8,9 +9,20 @@ Sometimes I write things! You can also find more writings in my [[Notes/Root Dir
 
 ## Non-fiction
 
-As the majority of _Root Directory_ is my non-fiction writing, this is reserved for reviews and longform essays.
+### Reviews
 
+- [[Notes/Fiction Rating Flowchart\|Fiction Rating Flowchart]]
 - [[Notes/Review - Trinity Sol 3\|Review - Trinity Sol 3]]
+
+### Arguments
+
+- [[Notes/Carmilla’s transgression lies in erotic unease, not romantic queerness\|Carmilla’s transgression lies in erotic unease, not romantic queerness]]
+- [[Notes/Being overlooked is not the same as being undervalued\|Being overlooked is not the same as being undervalued]]
+- [[Notes/Imperfect work should be shared\|Imperfect work should be shared]]
+- [[Notes/Nano is worse than Vim\|Nano is worse than Vim]]
+- [[Notes/Colemak is better than QWERTY\|Colemak is better than QWERTY]]
+- [[Notes/I tried vibe coding. I don't like it.\|I tried vibe coding. I don't like it.]]
+- 
 
 ## Fiction
 

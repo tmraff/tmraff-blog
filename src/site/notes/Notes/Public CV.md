@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/public-cv/","title":"Exhibitions","created":"2026-08-29T13:12:29.901+01:00","updated":"2026-09-16T18:45:09.843+01:00","dg-note-properties":{"created":"2026-08-29T13:29","updated":"2026-09-16T18:09","title":"Exhibitions"}}
+{"dg-publish":true,"permalink":"/notes/public-cv/","title":"CV","created":"2026-08-29T13:12:29.901+01:00","updated":"2026-09-24T18:21:04.154+01:00","dg-note-properties":{"created":"2026-08-29T13:29","updated":"2026-09-16T18:09","title":"CV"}}
 ---
 
 

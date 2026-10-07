@@ -56,7 +56,7 @@ This is the main theme of this note. You do not need to know everything. You do 
 
 ## Ideas that stand in opposition
 
-- [[Nano is easier than Vim\|Nano is easier than Vim]]
+- [[Notes/Nano is easier than Vim\|Nano is easier than Vim]]
 
 ## Further reading
 
