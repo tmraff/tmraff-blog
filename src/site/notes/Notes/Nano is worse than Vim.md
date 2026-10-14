@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/nano-is-worse-than-vim/","title":"Nano is worse than Vim","created":"2026-09-18T19:59:14.787+01:00","updated":"2026-09-18T20:14:26.799+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-18T20:20","title":"Nano is worse than Vim","noteStatus":"sprout","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/nano-is-worse-than-vim/","title":"Nano is worse than Vim","created":"2026-09-18T22:25:42.952+01:00","updated":"2026-09-18T22:25:43.256+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-18T20:20","title":"Nano is worse than Vim","noteStatus":"sprout","aliases":null,"cssclasses":[]}}
 ---
 
 

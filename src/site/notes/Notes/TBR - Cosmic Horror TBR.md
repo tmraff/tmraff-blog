@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/tbr-cosmic-horror-tbr/","created":"2024-10-20T22:14:45.257+01:00","updated":"2026-08-25T14:22:53.031+01:00","dg-note-properties":{"created":"2024-10-21-10:00","updated":"2026-08-25-14:52"}}
+{"dg-publish":true,"permalink":"/notes/tbr-cosmic-horror-tbr/","created":"2026-09-26T10:17:07.503+01:00","updated":"2026-09-26T10:17:07.807+01:00","dg-note-properties":{"created":"2024-10-21-10:00","updated":"2026-08-25-14:52"}}
 ---
 
 

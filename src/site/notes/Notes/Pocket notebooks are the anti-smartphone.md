@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/pocket-notebooks-are-the-anti-smartphone/","created":"2024-11-24T22:27:00.846+00:00","updated":"2026-09-24T18:05:19.209+01:00","dg-note-properties":{"created":"2026-07-25T13:09","updated":"2026-09-24T18:19","noteStatus":"seedling","aliases":null}}
+{"dg-publish":true,"permalink":"/notes/pocket-notebooks-are-the-anti-smartphone/","created":"2026-07-25T13:25:09.339+01:00","updated":"2026-09-24T18:05:19.209+01:00","dg-note-properties":{"created":"2026-07-25T13:09","updated":"2026-09-24T18:19","noteStatus":"seedling","aliases":null}}
 ---
 
 

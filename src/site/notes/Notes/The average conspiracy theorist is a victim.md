@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/the-average-conspiracy-theorist-is-a-victim/","created":"2025-02-06T01:33:55.524+00:00","updated":"2026-09-24T18:17:11.193+01:00","dg-note-properties":{"created":"2026-07-25T13:37","updated":"2026-09-24T18:11","noteStatus":"budding","aliases":null,"cssclasses":null}}
+{"dg-publish":true,"permalink":"/notes/the-average-conspiracy-theorist-is-a-victim/","created":"2026-07-25T13:25:37.139+01:00","updated":"2026-09-24T18:17:11.193+01:00","dg-note-properties":{"created":"2026-07-25T13:37","updated":"2026-09-24T18:11","noteStatus":"budding","aliases":null,"cssclasses":null}}
 ---
 
 

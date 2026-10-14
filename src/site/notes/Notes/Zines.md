@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/zines/","title":"Zines","created":"2026-09-22T22:54:57.961+01:00","updated":"2026-09-23T00:00:52.261+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-23T00:52","title":"Zines","noteStatus":"seedling","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/zines/","title":"Zines","created":"2026-09-23T10:40:42.102+01:00","updated":"2026-09-23T10:40:42.406+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-09-23T00:52","title":"Zines","noteStatus":"seedling","aliases":null,"cssclasses":[]}}
 ---
 
 

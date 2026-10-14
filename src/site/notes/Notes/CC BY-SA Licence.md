@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/cc-by-sa-licence/","title":"CC BY-SA Licence","created":"2026-08-27T12:11:57.774+01:00","updated":"2026-09-15T23:23:36.550+01:00","dg-note-properties":{"created":"2026-08-27-12:57","updated":"2026-08-27-13:38","noteStatus":"budding","aliases":null,"cssclasses":[],"title":"CC BY-SA Licence"}}
+{"dg-publish":true,"permalink":"/notes/cc-by-sa-licence/","title":"CC BY-SA Licence","created":"2026-08-27T16:35:29.797+01:00","updated":"2026-09-15T23:23:36.550+01:00","dg-note-properties":{"created":"2026-08-27-12:57","updated":"2026-08-27-13:38","noteStatus":"budding","aliases":null,"cssclasses":[],"title":"CC BY-SA Licence"}}
 ---
 
 

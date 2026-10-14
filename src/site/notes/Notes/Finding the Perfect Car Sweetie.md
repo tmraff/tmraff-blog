@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/finding-the-perfect-car-sweetie/","title":"Finding the Perfect Car Sweetie","created":"2026-10-06T15:15:57.997+01:00","updated":"2026-10-07T14:28:36.120+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-10-07T14:16","title":"Finding the Perfect Car Sweetie","noteStatus":"sprout","aliases":null,"cssclasses":[]}}
+{"dg-publish":true,"permalink":"/notes/finding-the-perfect-car-sweetie/","title":"Finding the Perfect Car Sweetie","created":"2026-10-06T15:16:12.018+01:00","updated":"2026-10-11T16:42:39.012+01:00","dg-note-properties":{"created":"2024-09-14T22:48","updated":"2026-10-07T14:06","title":"Finding the Perfect Car Sweetie","noteStatus":"seedling","aliases":null,"cssclasses":[]}}
 ---
 
 
